@@ -1,3 +1,4 @@
+console.log('Script loaded!');
 // Mobile nav menu toggle
 
 const button = document.querySelector('#menu-button');
@@ -64,3 +65,24 @@ function myFunction() {
   }
 
 }
+
+// Video sound ON / OFF
+
+// Initially show the volume icon and text because the video is muted
+document.getElementById('volume-icon').style.display = 'block';
+document.getElementById('volume-text').style.display = 'block';
+
+document.getElementById('homepagevideo').addEventListener('click', function (e) {
+  if (this.muted) {
+    this.muted = false;
+    // Hide the volume icon and text when the video is unmuted
+    document.getElementById('volume-icon').style.display = 'none';
+    document.getElementById('volume-text').style.display = 'none';
+  } else {
+    this.muted = true;
+    // Show the volume icon and "Click to Unmute" text when the video is muted
+    document.getElementById('volume-icon').style.display = 'block';
+    document.getElementById('volume-text').innerText = "Click to Unmute";
+    document.getElementById('volume-text').style.display = 'block';
+  }
+});
