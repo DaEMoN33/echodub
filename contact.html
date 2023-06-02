@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <title>
+      Contact Us | EchoDub - Your Videos, Your Voice in 10 Languages - Grow Your International Audience!
+    </title>
+    
+    <link rel="shortcut icon" href="/static/core/images/favicon.3ec7658f8d4a.png" type="image/x-icon" />
+    <script src="https://www.google.com/recaptcha/api.js?render=6LczR2ImAAAAAMmi7AmQ2NnBw6LKL5cMsJsQ3uMX"></script>
+    <script>
+      grecaptcha.ready(function () {
+          grecaptcha.execute('{your-site-key}', {action: 'submit'}).then(function (token) {
+              console.info("got token: " + token);
+              document.getElementById('g-recaptcha-response').value = token;
+          });
+      });
+    </script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Martian+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+    <style>
+        .font-inter {
+            font-family: 'Inter', sans-serif;
+          }
+        .font-martian {
+            font-family: 'Martian Mono', monospace;
+        }
+        #video-container {
+          position: relative;
+        }
+        
+        #volume-icon, #volume-text {
+          opacity:100%;
+          position: absolute;
+          top: 25%;
+          left: 90%;
+          transform: translate(-50%, -50%);
+          /* additional styling like color, size, etc. */
+        }
+    </style>
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+
+</head>
+
+<body class="flex flex-col min-h-screen font-inter bg-gradient-to-b from-stone-300 to-white">
+    <section id="nav">
+        <header>
+            <nav
+               class="
+                 flex flex-wrap
+                 max-w-screen-xl
+                 items-center
+                 mr-auto
+                 ml-auto
+                 justify-between
+                 py-6
+                 md:py-2
+                 px-6
+                 text-lg text-gray-700
+               "
+             >
+             <div class="flex-1 md:flex md:items-center md:gap-12">
+                <a class="block text-indigo-600" href="/">
+                  <span class="sr-only">Home</span>
+                  <p class="text-2xl font-extrabold text-gray-900 transition hover:text-gray-700/75"><img width="180" src="echodub-logo.png"></p>
+                </a>
+              </div>
+              
+                <svg
+                   xmlns="http://www.w3.org/2000/svg"
+                   id="menu-button"
+                   class="h-6 w-6 cursor-pointer md:hidden block"
+                   fill="none"
+                   viewBox="0 0 24 24"
+                   stroke="currentColor"
+                 >
+                   <path
+                     stroke-linecap="round"
+                     stroke-linejoin="round"
+                     stroke-width="2"
+                     d="M4 6h16M4 12h16M4 18h16"
+                   />
+                 </svg>
+              
+              <div class="hidden w-full md:flex md:items-center md:w-auto" id="menu">
+                 <ul
+                   class="
+                     pt-4
+                     text-base text-gray-800
+                     font-medium
+                     md:flex
+                     md:justify-between 
+                     md:pt-0
+                     "
+                 >
+            
+                   <li>
+                     <a class="md:p-4 py-2 block hover:text-red-800" href="/#howitworks"
+                       >FAQ</a
+                     >
+                   </li>
+                   <li>
+                     <a class="md:p-4 py-2 block hover:text-red-800" href="/#pricing"
+                       >Pricing</a
+                     >
+                   </li>
+                   <li>
+                     <a class="md:p-4 py-2 block hover:text-red-800" href="/support/"
+                       >Support</a
+                     >
+                   </li>
+                   
+                   <li>
+                    <div class="md:p-2 py-2 block">
+                     <a href="#" class="md:inline-block align-middle">
+                        <button class="bg-red-600 hover:bg-red-700 text-white py-2 px-4 rounded-md font-medium" style="text-shadow: 0px 1px #333;">Get Started</button>
+                     </a>
+                    </div>
+                   </li>
+                       
+                     
+                 </ul>
+               </div>
+           </nav>
+         </header>
+        
+    </section>
+    
+
+
+    <section>
+      <div class="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
+          <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900">Contact Us</h2>
+          <p class="mb-8 lg:mb-16 font-light text-center text-gray-600 sm:text-xl">Let's get in touch so we can increase your views and grow your audience! Or... just say hi! 👋</p>
+          <form action="https://formspree.io/f/xzbqldvw" method="POST" class="space-y-8">
+              <div>
+                  <label for="email" class="block mb-2 text-sm font-medium text-gray-900 ">Your email</label>
+                  <input type="email" id="email" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5" placeholder="name@flowbite.com" required>
+              </div>
+              <div class="sm:col-span-2">
+                  <label for="message" class="block mb-2 text-sm font-medium text-gray-900 ">Your message</label>
+                  <textarea id="message" rows="6" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500" placeholder="Leave a comment..."></textarea>
+              </div>
+              <input type="hidden" id="g-recaptcha-response" name="g-recaptcha-response">
+              <button id="my-form-button" type="submit" class="py-3 px-5 text-sm font-medium text-center text-white rounded-lg bg-red-600 sm:w-fit hover:bg-red-700 focus:ring-4 focus:outline-none focus:ring-red-300">Send message</button>
+          </form>
+      </div>
+    </section>
+
+        <!-- hero section 
+        <section class="container max-w-7xl mx-auto flex flex-col-reverse gap-x-6 md:flex-row items-center md:py-16 px-6">
+          <form id="my-form" action="https://formspree.io/f/xzbqldvw" method="POST">
+            <label>Email:</label>
+            <input type="email" name="email" />
+            <label>Message:</label>
+            <input type="textarea" name="message" />
+            <input type="hidden" id="g-recaptcha-response" name="g-recaptcha-response">
+            <button id="my-form-button">Submit</button>
+            <p id="my-form-status"></p>
+          </form>
+        </section>-->
+        
+
+    <section id="footer" class="mt-auto">
+        <footer>
+            <div class="max-w-7xl px-4 py-16 mx-auto sm:px-6 lg:px-8">
+                <div class="grid grid-cols-1 gap-8 lg:grid-cols-3">
+                <div>
+            
+                    <p class="max-w-xs mt-4 text-sm text-gray-700">
+                    </p>
+            
+                    <div class="flex mt-8 space-x-6 text-gray-700">
+                    </div>
+                </div>
+            
+                <div class="grid grid-cols-1 gap-8 lg:col-span-2 sm:grid-cols-2 lg:grid-cols-4">
+                    <div>
+                    <p class="font-medium">
+                        <!-- Company -->
+                    </p>
+            
+                    <nav class="flex flex-col mt-4 space-y-2 text-sm text-gray-700">
+                    </nav>
+                    </div>
+            
+                    <div>
+                    <p class="font-medium">
+                        <!-- Services -->
+                    </p>
+            
+                    <nav class="flex flex-col mt-4 space-y-2 text-sm text-gray-700">
+                    </nav>
+                    </div>
+            
+                    <div>
+                    <p class="font-medium">
+                        Helpful Links
+                    </p>
+            
+                    <nav class="flex flex-col mt-4 space-y-2 text-sm text-gray-700">
+                        <a class="hover:opacity-75" href="/support/"> Contact </a>
+                        <a class="hover:opacity-75" href=""> FAQ </a>
+                    </nav>
+                    </div>
+            
+                    <div>
+                    <p class="font-medium">
+                        Legal
+                    </p>
+            
+                    <nav class="flex flex-col mt-4 space-y-2 text-sm text-gray-700">
+                        <a class="hover:opacity-75" href="/privacy-policy/"> Privacy Policy </a>
+                        <a class="hover:opacity-75" href="/privacy-policy/"> Terms & Conditions </a>
+                    </nav>
+                    </div>
+                </div>
+                </div>
+            
+                <p class="mt-8 text-xs text-gray-700">
+                &copy; 2022 EchoDub.ai
+                </p>
+            </div>
+        </footer>
+    </section>
+    <script src="js/my.js"></script>
+</body>
+</html>
