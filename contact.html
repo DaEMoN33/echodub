@@ -10,7 +10,8 @@
     </title>
     
     <link rel="shortcut icon" href="/static/core/images/favicon.3ec7658f8d4a.png" type="image/x-icon" />
-    <script src="https://www.google.com/recaptcha/api.js?render=6LczR2ImAAAAAMmi7AmQ2NnBw6LKL5cMsJsQ3uMX"></script>
+    <!-- <script src="https://www.google.com/recaptcha/api.js?render=6LczR2ImAAAAAMmi7AmQ2NnBw6LKL5cMsJsQ3uMX"></script> -->
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     <script>
       grecaptcha.ready(function () {
           grecaptcha.execute('{your-site-key}', {action: 'submit'}).then(function (token) {
@@ -150,7 +151,8 @@
                   <label for="message" class="block mb-2 text-sm font-medium text-gray-900 ">Your message</label>
                   <textarea id="message" rows="6" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500" placeholder="Leave a comment..."></textarea>
               </div>
-              <input type="hidden" id="g-recaptcha-response" name="g-recaptcha-response">
+              <div class="g-recaptcha" data-sitekey="your_site_key"></div>
+              <!-- <input type="hidden" id="g-recaptcha-response" name="g-recaptcha-response"> -->
               <button id="my-form-button" type="submit" class="py-3 px-5 text-sm font-medium text-center text-white rounded-lg bg-red-600 sm:w-fit hover:bg-red-700 focus:ring-4 focus:outline-none focus:ring-red-300">Send message</button>
           </form>
       </div>
