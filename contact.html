@@ -15,10 +15,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Martian+Mono:wght@300;400;500&display=swap" rel="stylesheet">
-    <script src="https://www.google.com/recaptcha/api.js?render={your-site-key}"></script>
+    <script src="https://www.google.com/recaptcha/api.js?render=6LczR2ImAAAAAMmi7AmQ2NnBw6LKL5cMsJsQ3uMX"></script>
     <script>
         grecaptcha.ready(function () {
-            grecaptcha.execute('{your-site-key}', {action: 'submit'}).then(function (token) {
+            grecaptcha.execute('6LczR2ImAAAAAMmi7AmQ2NnBw6LKL5cMsJsQ3uMX', {action: 'submit'}).then(function (token) {
                 console.info("got token: " + token);
                 document.getElementById('g-recaptcha-response').value = token;
             });
