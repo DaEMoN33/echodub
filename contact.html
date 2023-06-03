@@ -10,15 +10,6 @@
     </title>
     
     <link rel="shortcut icon" href="/static/core/images/favicon.3ec7658f8d4a.png" type="image/x-icon" />
-    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-    <script>
-      grecaptcha.ready(function () {
-          grecaptcha.execute('6LczR2ImAAAAAMmi7AmQ2NnBw6LKL5cMsJsQ3uMX', {action: 'submit'}).then(function (token) {
-              console.info("got token: " + token);
-              document.getElementById('g-recaptcha-response').value = token;
-          });
-      });
-    </script>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -143,11 +134,11 @@
           <p class="mb-8 lg:mb-16 font-light text-center text-gray-600 sm:text-xl">Let's get in touch so we can increase your views and grow your audience! Or... just say hi! 👋</p>
           <form action="https://formspree.io/f/xzbqldvw" method="POST" class="space-y-8">
               <div>
-                  <label for="email" class="block mb-2 text-sm font-medium text-gray-900 ">Your email</label>
+                  <label for="email" class="block mb-2 text-sm font-medium text-gray-900">Your email</label>
                   <input type="email" id="email" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5" placeholder="name@flowbite.com" required>
               </div>
               <div class="sm:col-span-2">
-                  <label for="message" class="block mb-2 text-sm font-medium text-gray-900 ">Your message</label>
+                  <label for="message" class="block mb-2 text-sm font-medium text-gray-900">Your message</label>
                   <textarea id="message" rows="6" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500" placeholder="Leave a comment..."></textarea>
               </div>
               <input type="hidden" id="g-recaptcha-response" name="g-recaptcha-response">
